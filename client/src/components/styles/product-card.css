@@ -1,0 +1,118 @@
+.card {
+    width: 225px;
+    min-height: 300px;
+    box-shadow: 1px 2px 4px rgba(86, 27, 124, 0.32);
+    background-color: rgba(146, 120, 255, 0.37);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+/*Название курса*/
+.card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 22px;
+    color: #3a0b54;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card__label:hover {
+    color: #b77cff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+    box-shadow: 4px 8px 16px rgb(183, 124, 255);
+}
+.card__favor{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 10px;
+    right: 20px;
+    color: #3a0b54;
+    font-weight: bold;
+}
+.star_img{
+    height: 20px;
+    width: 20px;
+    padding-left: 3px;
+}
+.card__top {
+    flex: 0 0 150px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 220px;
+    transition: 0.2s;
+}
+.card__image:hover > img {
+    transform: scale(1.1);
+}
+
+.card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+    padding: 10px;
+}
+
+.card__prices {
+    margin: 0;
+}
+.card__price--common {
+    font-weight: bold;
+    font-size: 18px;
+    color: #606060;
+}
+
+.card__price--discount {
+    font-weight: bold;
+    font-size: 16px;
+    color: #414141;
+    word-break: normal;
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #3a0b54;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(86, 27, 124, 0.32);
+    background-color: rgba(255, 255, 255, 0.62);
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+.card__add:hover {
+    border: 1px solid #53117c;
+    background-color: #53117c;
+    color: #fff;
+}

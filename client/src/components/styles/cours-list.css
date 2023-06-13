@@ -1,0 +1,44 @@
+.curs__navigation{
+    background-color: transparent;
+    border: 4px;
+    border-bottom-style: solid;
+    color: #53117c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, #F0E4FFFF 80%);
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+}
+.curs__navigation a{
+    border: 4px;
+    text-transform: uppercase;
+    color: rgb(73, 46, 32);
+    background-color: transparent;
+    transition: 0.2s;
+    padding: 16px 20px 10px 20px;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.curs__navigation a:hover{
+    border-style: none solid none solid;
+    color: #53117c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, #F0E4FFFF 50%);
+    cursor: pointer;
+}
+.cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 100%; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    /* margin: 0 auto; */
+    margin-top: 25px;
+}

@@ -1,0 +1,204 @@
+
+*:focus{
+    outline: none;
+}
+
+.m_panel_title{
+    text-align: center;
+    color: #3a0b54;
+    margin-bottom: 4%;
+    line-height: 2;
+}
+.line-div{
+    border-style: solid none;
+    border-color: #b9a7d0;
+    margin: 20px -20px;
+    padding: 15px;
+}
+.creating-panel label{
+    font-weight: normal;
+    color: #53117c;
+    font-size: 20px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+.creating-panel button{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 10px;
+    background-color: #c293ff;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    transition: 0.2s;
+}
+.creating-panel button:hover{
+    background-color: #dac2ff;
+}
+.creating-panel input, textarea{
+    width: 300px;
+    border: 4px;
+    appearance: none;
+    background: #fffbf8;
+    padding: 12px;
+    border-radius: 2px;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.13);
+    font-size: 17px;
+    margin: 10px;
+}
+.creating-panel textarea{
+    width: 350px;
+    overflow: auto;
+}
+#cont{
+    width: 1000px;
+    height: 300px;
+}
+
+.m_panel_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.m_panel_buttons a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 70px;
+    background-color: #c293ff;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: white;
+    border-radius: 4px;
+}
+
+#b1:hover{
+    transition: 0.2s;
+    font-weight: bold;
+    transform: scale(1.2); /* Увеличиваем масштаб */
+    cursor: pointer;
+}
+#b2:hover{
+    transition: 0.2s;
+    font-weight: bold;
+    transform: scale(1.2); /* Увеличиваем масштаб */
+    cursor: pointer;
+}
+
+.texts{
+    display: flex;
+    justify-content: space-around;
+}
+.texts-div{
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    width: 25%;
+    color: #53117c;
+    line-height: 3;
+    opacity: 0;
+}
+.show1{
+    animation: ani 1.5s forwards;
+}
+.show2{
+    animation: ani 1.5s forwards;
+}
+
+.creating-panel{
+    margin-top: 50px;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    background-color: #f3e7ff;
+    left: calc(50% - 70%/2);
+    box-shadow:
+            0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .8),
+            23px 0 20px -23px rgba(0, 0, 0, .8);
+}
+
+.creating-panel img{
+    height: 90px;
+    width: 100px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #ebc8ff;
+}
+.images label{
+    margin-right: 10px;
+}
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+.input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Century Gothic", sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #c293ff;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 10px;
+    transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.input-file2{
+    overflow:hidden;
+    width:95px;
+    height:37px;
+    cursor:pointer;
+    background: white;
+}
+.input-file2 input{
+    opacity:0;
+    filter:alpha(opacity:0);
+    font-size:199px;
+    cursor:pointer;
+    padding:0px;
+    margin:0px;
+    border:none;
+    margin-left:-450px;
+}
+
+/* Focus */
+.input-file input[type=file]:focus + span {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+    background-color: #dac2ff;
+}
+.input-file:active span {
+    background-color: #dac2ff;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+    background-color: #eee;
+}

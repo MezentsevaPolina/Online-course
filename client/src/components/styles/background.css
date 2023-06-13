@@ -1,0 +1,39 @@
+.circle{
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    width: 50em;
+    height: 50em;
+    border: none;
+    border-radius: 50%;
+    background: rgba(218, 194, 255, 0.62) url(../../accets/lilac-lite.svg) repeat;
+    background-size: 50px;
+    opacity: 50%;
+    z-index: -1;
+}
+.pie{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50em;
+    height: 50em;
+    border: none;
+    border-radius: 0 0 0 100%;
+    background: rgba(218, 194, 255, 0.62) url(../../accets/lilac-lite.svg) repeat;
+    background-size: 50px;
+    opacity: 50%;
+    z-index: -1;
+}
+.radius{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 50em;
+    height: 100em;
+    border: none;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    background: rgba(218, 194, 255, 0.62) url(../../accets/lilac-lite.svg) repeat;
+    background-size: 50px;
+    opacity: 50%;
+    z-index: -1;
+}

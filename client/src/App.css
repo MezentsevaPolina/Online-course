@@ -1,0 +1,40 @@
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Century Gothic", sans-serif;
+    height: 100%;
+    background: linear-gradient(#dac2ff, #ffffff 50%) no-repeat;
+}
+
+.g_title{
+    margin-top: 8%;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: normal;
+    color: #652f15;
+}
+.g_title2{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #53117c;
+}
+.loader{
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

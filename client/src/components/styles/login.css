@@ -1,0 +1,67 @@
+*:focus {outline: none}
+
+.login-form{
+    margin-top: 50px;
+    text-align: right;
+    margin-right: calc(50% - 187px);
+    line-height: 3em;
+    font-size: 20px;
+    color: #3a0b54;
+}
+
+.button__log{
+    border: 4px;
+    padding: 15px 20px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: rgb(73, 46, 32);
+    transition: 0.2s;
+    background-color: transparent;
+}
+.button__log:hover {
+    color: #53117c;
+    background-color: rgb(246, 240, 255);
+}
+
+.the_input {
+    border: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fffbf8;
+    padding: 12px;
+    border-radius: 2px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    width: 250px;
+    font-size: 17px;
+    margin: 10px;
+}
+.the_input:hover{
+    border-bottom-style: solid;
+    border-bottom-color: #3a0b54;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.the_input:focus{
+    border-style: none none solid none;
+    border-bottom-color: #3a0b54;
+}
+.registration{
+    text-decoration: none;
+    color: #3a0b54;
+    font-weight: bold;
+}
+.registration:hover{
+    text-decoration: underline;
+}
+#correct-message{
+    display: none;
+}
+.message-show{
+    display: block;
+}
+
+

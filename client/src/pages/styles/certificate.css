@@ -1,0 +1,124 @@
+.certs {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 100%; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 40px; /* Отступ между рядами */
+    /* margin: 0 auto; */
+    margin-top: 25px;
+}
+.cert {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(86, 27, 124, 0.32);
+    background-color: rgba(234, 228, 255, 0.37);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+/*Название курса*/
+.cert__label {
+    padding: 4px 8px;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #3a0b54;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.cert:hover {
+    box-shadow: 4px 8px 16px rgb(183, 124, 255);
+}
+/*сердечко*/
+.download {
+    position: relative;
+    width: 15px;
+    height: 26px;
+}
+
+.cert__favor{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+.cert__top {
+    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+.cert__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+    padding: 10px;
+}
+
+/* Контейнер для картинки */
+.cert__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cert__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.cert__open {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #3a0b54;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(86, 27, 124, 0.32);
+    background-color: rgba(255, 255, 255, 0.62);
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: 20px; /* Прижимаем кнопку к низу карточки */
+}
+.cert__open:hover {
+    border: 1px solid #53117c;
+    background-color: #53117c;
+    color: #fff;
+}
+.back{
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 20px 3px 50px;
+    border-radius: 0 4px 4px 0;
+    color: rgb(83, 17, 124);
+    transition: 0.2s;
+    height: 40px;
+    text-transform: uppercase;
+}
+.back:hover{
+    cursor: pointer;
+    color: white;
+    box-shadow:0 0 10px 4px rgba(194, 147, 255, 0.73);
+    background-color: rgb(194, 147, 255);
+}
